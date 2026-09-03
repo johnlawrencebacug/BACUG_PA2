@@ -11,6 +11,8 @@ problem in a separate, clearly labeled section of the notebook.
 * Display the requested checks in the notebook before saving each result.
 * Do not use libraries other than NumPy
 
+* import numpy as np - this defines that numpy as recognized as np
+
 ## PROBLEM A
 * Pseudorandom Seed Initialization Configured `np.random.seed(2112)` to constrain the internal state of the pseudo-random number generator, enabling complete replication of generated data values across environments.
 * Matrix Instantiation
