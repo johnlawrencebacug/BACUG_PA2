@@ -57,3 +57,25 @@ np.save('div_by_4.npy', div_by_4)
 
 
 ## PROBLEM C
+* Square Generation & Reshaping Generated the square of integers from 1 to 36 using `(np.arange(1, 37) ** 2)` and shaped them into a 6 \times 6 matrix (S) via `.reshape(6, 6)`.
+* Statistical Calculation
+Computed the overall arithmetic mean (S_mean) across all 36 elements in the matrix using `np.mean(S)`.
+* Conditional Filtering
+Applied a boolean mask `(S > S_mean)` to isolate and extract every element strictly greater than the dataset's calculated mean into a new array `(above_mean)`.
+* Counting & File Saving
+Determined the count of filtered elements using `.size` and exported the resulting array to `above_mean.npy` via `np.save()`.
+
+```python
+S = (np.arange(1, 37) ** 2).reshape(6, 6)
+
+S_mean = np.mean(S)
+
+above_mean = S[S > S_mean]
+
+above_mean.size
+
+np.save('above_mean.npy', above_mean)
+```
+
+#### Read me file update history
+Date updated: 09/03/2026
